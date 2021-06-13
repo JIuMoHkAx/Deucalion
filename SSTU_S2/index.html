@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mr.LemonLanser</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="title-block">
+        <h1 class="title">Unity Developer Mr. Cat</h1>
+      </div>
+      <div class="userpic"></div>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#" onclick="mainbutton_click()" id="mainbutton">Главная</a></li>
+        <li><a href="#" onclick="formbutton_click()" id="formbutton">Набор в команду</a></li>        
+        <li><a href="mailtable.html" target="_blank">Обо мне</a></li>
+      </ul>
+    </div>
+    <div class="content-wrapper">
+      <div id="contid" class="content">
+        <h3>Главная</h3>
+        <p  class="maincontent">Меня зовут Mr. Cat, я разработчик игр на движке Unity. Работаю в небольшой российской компании, занимающейся разработкой игр под различные платформы: <B>мобильные, ПК, и Steam VR</B>  - <I>игры для очков виртуальной реальности, совместимые с ПК (HTC Vive и подобные).</I></p>
+        <p class="maincontent">Я создал эту страницу-визитку, чтобы немного рассказать о себе, начинающим программистам. И дать им понять, что представляют из себя некоторые начальные аспекты программирования.</p>
+      </div>
+      <div id="anketid" class="anketa">
+        <h3>Расскажи о себе!</h3>
+        <form class="formasvyas" action="check.php">
+          <p><input type="text" name="FIO" required pattern="^[А-Яа-яЁё\s]+$"><label class="required" >Фамилия</label></p>
+          <p><input type="text" name="FIO" required pattern="^[А-Яа-яЁё\s]+$"><label class="required" >Имя</label></p>
+          <p><input type="text" name="FIO" pattern="^[А-Яа-яЁё\s]+$"><label class="required" >Отчество</label></p>
+          <p><label class="required" >Пол:</label>
+            <input type="radio" name="gender" required> Мужской
+            <input type="radio" name="gender" required> Женский
+          </p>
+          <p>Укажите цвет ваших глаз:  <input type="color" name="eyeColor" ></p>
+          <p>
+            <input type="number" name="age" min="18" max="100", style="width: 10%"><label >Возраст</label>
+          </p>
+          <p>
+            <input type="date" name="age" max="2002-01-01" style="width: 15%" required><label class="required" >Дата рождения</label>
+          </p>
+          <p class="specialP">Выберите место рождения:
+            <select>
+              <option>Москва</option>
+              <option>Санкт-Петербург</option>
+              <option>Саратов</option>
+            </select>
+          </p>
+          <p><input type="number" name="postcode" required pattern="[0-9]{6}"><label class="required" >Почтовый индекс</label></p>
+          <p><input type="text" name="adress", placeholder="Улица, дом, квартира"><label class="required" >Адрес</label></p>
+          <p><input type="date" name="reg_day" min="2020-01-01"><label class="required" >Дата регистрации</label></p>
+          <p><input type="tel" name="phone", placeholder="+7(xxx)-xxx-xx-xx"><label class="required">Номер мобильного телефона</label></p>
+          <p><input type="email" name="email" required><label class="required" >Электронная почта</label></p>
+          <p class="specialP"><label class="required">Загрузите скриншот первой страницы паспорта:</label><br><input type="file" name="pic" accept=".jpeg"></p>
+          <p class="specialP">Откуда узнали о нашем магазине?<br>
+            <input style="margin-right: 10px" type="checkbox" name="checkbox">Сам нашел<br>
+            <input style="margin-right: 10px" type="checkbox" name="checkbox">Реклама подсказала<br>
+            <input style="margin-right: 10px" type="checkbox" name="checkbox">Знакомые подсказали
+          </p>
+          <p><label class="required">Согласие на обработку и хранение персональных данных:<input type="checkbox" name="confirm" required></label></p>
+          <p><input type="submit" value="Отправить"></p>
+          <p><button type="reset">Очисть все поля</button></p>
+        </form>
+      </div>         
+      <div class="sidebar">
+        <h3>Основы</h3>
+        <ul class="skills">
+          <li>C#</li>
+          <li>.NET</li>
+          <li>C++</li>
+          <li><a href="HTML\index.html" target="_blank">HTML</a></li>
+          <li>CSS</li>
+          <li>XML</li>
+          <li>JavaScript</li>      
+        </ul>     
+      </div>
+    <div>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>

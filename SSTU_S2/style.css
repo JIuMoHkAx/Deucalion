@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+body{
+    font-family: 'Work Sans', sans-serif;
+    background: url(https://catherineasquithgallery.com/uploads/posts/2021-02/1614534027_135-p-belii-fon-bumaga-155.jpg);
+    padding: 100px 0;
+}
+h3{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.container{
+    width: 800px;
+    min-height: 600px;
+    border: 10px solid white;
+    margin: 0 auto;
+    background: white;
+}
+.header{
+  display: flex;
+  height: 150px; 
+}
+.title-block{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  font-size: 30px;
+  color: white;
+  background: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80) center center / cover;
+  margin-right: 10px;
+}
+.title-block::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.3;
+}
+.title{
+  position: relative;
+  z-index: 1;
+}
+.userpic{
+  display: flex;
+  height: 100%;
+  width: 20%;
+  background: url(https://images.unsplash.com/photo-1533738363-b7f9aef128ce?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80) no-repeat center center / cover;
+}
+.nav ul{
+  display: flex;
+  border-radius: 10px 10px 10px 10px;
+  background: rgb(230, 230, 230);
+  margin: 5px 0;  
+}
+.nav li a {
+  padding: 20px;
+  display: flex;
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px 10px 10px 10px;
+  border-right: 1px solid #d1d1d1;
+  transition: background .3s ease;
+}
+.nav li a:hover{
+  background: rgb(190, 190, 190);
+}
+
+.content-wrapper{
+  display: flex;
+}
+.content{
+  width: 70%;
+  padding: 10px;
+}
+.sidebar{
+  padding: 10px;
+  width: 30%;
+}
+.skills li {
+  margin: 10px 0;
+  transition: transform .5s ease;
+}
+.skills li:hover{
+  transform: translateX(10px);
+}
+.anketa{
+  display: none;
+  width: 70%;
+  padding: 10px;
+}
+.required:after{
+	color: red;
+    content: " *";
+}
+input{
+  margin-top: 10px;
+}
+button{
+  margin-top: 10px;
+}
+.specialP{
+  margin-top: 10px;
+}
+.required{
+  margin-left: 10px;
+}
+.maincontent{
+  line-height: 1.5;
+}
+.haeder{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  background-color: black;
+  color: white;
+}
+table {
+  border: 1px solid grey;
+  padding: 1px;
+}
+td {
+  border: 1px solid grey;
+  width: 800px;
+}
+tr {
+  border: 1px solid blue;
+}
+img{
+  width: 100%;
+  height: auto;
+  max-height: 350px;
+}
+.table td, .table th{
+  padding: 1px;
+}
+.mailfooter{
+  position: relative;
+  display: flex;
+  width: 750px;
+  height: 50px;
+  background: url(https://static.tildacdn.com/tild3562-6566-4566-b835-363432373131/__-.png) no-repeat center center / cover;
+}
+.mailfooter:hover::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+
+
+
