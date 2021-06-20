@@ -17,6 +17,13 @@ h3{
     margin: 0 auto;
     background: white;
 }
+.container2{
+  width: 600px;
+  min-height: 600px;
+  border: 10px solid white;
+  margin: 0 auto;
+  background: white;
+}
 .header{
   display: flex;
   height: 150px; 
@@ -55,10 +62,12 @@ h3{
 }
 .nav ul{
   display: flex;
+  justify-content: space-evenly;
   border-radius: 10px 10px 10px 10px;
   background: rgb(230, 230, 230);
   margin: 5px 0;  
 }
+
 .nav li a {
   padding: 20px;
   display: flex;
@@ -130,7 +139,7 @@ table {
 }
 td {
   border: 1px solid grey;
-  width: 800px;
+  width: 600px;
 }
 tr {
   border: 1px solid blue;
@@ -146,7 +155,7 @@ img{
 .mailfooter{
   position: relative;
   display: flex;
-  width: 750px;
+  width: 600px;
   height: 50px;
   background: url(https://static.tildacdn.com/tild3562-6566-4566-b835-363432373131/__-.png) no-repeat center center / cover;
 }
@@ -160,6 +169,9 @@ img{
   background: black;
   opacity: 0.3;
   cursor: pointer;
+}
+*, ::after, ::before {
+  box-sizing: content-box;
 }
 
 

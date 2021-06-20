@@ -18,16 +18,32 @@
     </div>
     <div class="nav">
       <ul>
-        <li><a href="#" onclick="mainbutton_click()" id="mainbutton">Главная</a></li>
-        <li><a href="#" onclick="formbutton_click()" id="formbutton">Набор в команду</a></li>        
-        <li><a href="mailtable.html" target="_blank">Обо мне</a></li>
+        <li id="one"><a href="#" onclick="formbutton_click()" id="formbutton">Набор в команду</a></li>        
+        <li id="two"><a href="#" onclick="mainbutton_click()" id="mainbutton">Главная</a></li>
+        <li id="three"><a href="mailtable.html" target="_blank">Обо мне</a></li>
       </ul>
     </div>
     <div class="content-wrapper">
       <div id="contid" class="content">
         <h3>Главная</h3>
-        <p  class="maincontent">Меня зовут Mr. Cat, я разработчик игр на движке Unity. Работаю в небольшой российской компании, занимающейся разработкой игр под различные платформы: <B>мобильные, ПК, и Steam VR</B>  - <I>игры для очков виртуальной реальности, совместимые с ПК (HTC Vive и подобные).</I></p>
+        <p  class="maincontent">Меня зовут Mr. Cat, я <small>разработчик</small> игр на движке <sup>Unity</sup>. Работаю в небольшой российской компании, занимающейся разработкой игр под различные платформы: <B>мобильные, ПК, и Steam VR</B>  - <I>игры для очков виртуальной реальности, совместимые с ПК (HTC <sup>Vive</sup> и подобные).</I></p>
         <p class="maincontent">Я создал эту страницу-визитку, чтобы немного рассказать о себе, начинающим программистам. И дать им понять, что представляют из себя некоторые начальные аспекты программирования.</p>
+      <p><pre>
+        \`*-.                    
+        )  _`-.                 
+       .  : `. .                
+       : _   '  \               
+       ; *` _.   `*-._          
+       `-.-'          `-.       
+         ;       `       `.     
+         :.       .        \    
+         . \  .   :   .-'   .   
+         '  `+.;  ;  '      :   
+         :  '  |    ;       ;-. 
+         ; '   : :`-:     _.`* ;
+    .*' /  .*' ; .*`- +'  `*' 
+      `*-*   `*-*  `*-*'        
+      </pre></p>
       </div>
       <div id="anketid" class="anketa">
         <h3>Расскажи о себе!</h3>
@@ -44,7 +60,7 @@
             <input type="number" name="age" min="18" max="100", style="width: 10%"><label >Возраст</label>
           </p>
           <p>
-            <input type="date" name="age" max="2002-01-01" style="width: 15%" required><label class="required" >Дата рождения</label>
+            <input type="date" name="age" min="1921-01-01" max="2002-01-01" style="width: 25%" required><label class="required" >Дата рождения</label>
           </p>
           <p class="specialP">Выберите место рождения:
             <select>
